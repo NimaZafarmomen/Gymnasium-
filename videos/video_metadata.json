@@ -1,0 +1,10 @@
+{
+  "config": "gamma_0.9",
+  "seed": 0,
+  "evaluation_seed": 300000,
+  "steps": 13,
+  "return_value": -13,
+  "success": true,
+  "fps": 8,
+  "source": "Gymnasium rgb_array rendering"
+}

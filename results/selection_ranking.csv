@@ -1,0 +1,8 @@
+config,validation_reward,early_checkpoint_reward,training_reward
+gamma_0.9,-13.0,-13.0,-87.5166
+gamma_0.5,-13.0,-13.0,-87.6302
+baseline,-13.0,-13.0,-87.68892
+alpha_0.1,-13.0,-13.0,-89.97416
+alpha_0.9,-13.0,-13.0,-99.26544
+decay_0.999,-13.0,-17.87,-409.85244
+decay_0.95,-13.0,-22.74,-37.4442

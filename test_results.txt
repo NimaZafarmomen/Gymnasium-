@@ -1,0 +1,14 @@
+test_epsilon_schedule_and_seed_reproducibility (test_q_learning.TestQLearning.test_epsilon_schedule_and_seed_reproducibility) ... ok
+test_frozen_greedy_evaluation (test_q_learning.TestQLearning.test_frozen_greedy_evaluation) ... ok
+test_noise_rate (test_q_learning.TestQLearning.test_noise_rate) ... ok
+test_noise_replaces_with_a_different_action (test_q_learning.TestQLearning.test_noise_replaces_with_a_different_action) ... ok
+test_shortest_safe_route (test_q_learning.TestQLearning.test_shortest_safe_route) ... ok
+test_start_and_cliff_are_not_terminal (test_q_learning.TestQLearning.test_start_and_cliff_are_not_terminal) ... ok
+test_terminal_target (test_q_learning.TestQLearning.test_terminal_target) ... ok
+test_time_limit_still_bootstraps (test_q_learning.TestQLearning.test_time_limit_still_bootstraps) ... ok
+test_wall (test_q_learning.TestQLearning.test_wall) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.141s
+
+OK

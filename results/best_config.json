@@ -1,0 +1,12 @@
+{
+  "name": "gamma_0.9",
+  "alpha": 0.5,
+  "gamma": 0.9,
+  "epsilon_start": 1.0,
+  "epsilon_min": 0.05,
+  "epsilon_decay": 0.995,
+  "episodes": 5000,
+  "max_steps": 500,
+  "noise": 0.0,
+  "checkpoint_every": 50
+}

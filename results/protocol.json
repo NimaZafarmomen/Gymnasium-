@@ -1,0 +1,148 @@
+{
+  "environment": "CliffWalking-v1",
+  "gymnasium": "1.2.1",
+  "numpy": "2.3.5",
+  "python": "3.12.14",
+  "train_seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "configs": [
+    {
+      "name": "baseline",
+      "alpha": 0.5,
+      "gamma": 0.99,
+      "epsilon_start": 1.0,
+      "epsilon_min": 0.05,
+      "epsilon_decay": 0.995,
+      "episodes": 5000,
+      "max_steps": 500,
+      "noise": 0.0,
+      "checkpoint_every": 50
+    },
+    {
+      "name": "alpha_0.1",
+      "alpha": 0.1,
+      "gamma": 0.99,
+      "epsilon_start": 1.0,
+      "epsilon_min": 0.05,
+      "epsilon_decay": 0.995,
+      "episodes": 5000,
+      "max_steps": 500,
+      "noise": 0.0,
+      "checkpoint_every": 50
+    },
+    {
+      "name": "alpha_0.9",
+      "alpha": 0.9,
+      "gamma": 0.99,
+      "epsilon_start": 1.0,
+      "epsilon_min": 0.05,
+      "epsilon_decay": 0.995,
+      "episodes": 5000,
+      "max_steps": 500,
+      "noise": 0.0,
+      "checkpoint_every": 50
+    },
+    {
+      "name": "gamma_0.5",
+      "alpha": 0.5,
+      "gamma": 0.5,
+      "epsilon_start": 1.0,
+      "epsilon_min": 0.05,
+      "epsilon_decay": 0.995,
+      "episodes": 5000,
+      "max_steps": 500,
+      "noise": 0.0,
+      "checkpoint_every": 50
+    },
+    {
+      "name": "gamma_0.9",
+      "alpha": 0.5,
+      "gamma": 0.9,
+      "epsilon_start": 1.0,
+      "epsilon_min": 0.05,
+      "epsilon_decay": 0.995,
+      "episodes": 5000,
+      "max_steps": 500,
+      "noise": 0.0,
+      "checkpoint_every": 50
+    },
+    {
+      "name": "decay_0.95",
+      "alpha": 0.5,
+      "gamma": 0.99,
+      "epsilon_start": 1.0,
+      "epsilon_min": 0.05,
+      "epsilon_decay": 0.95,
+      "episodes": 5000,
+      "max_steps": 500,
+      "noise": 0.0,
+      "checkpoint_every": 50
+    },
+    {
+      "name": "decay_0.999",
+      "alpha": 0.5,
+      "gamma": 0.99,
+      "epsilon_start": 1.0,
+      "epsilon_min": 0.05,
+      "epsilon_decay": 0.999,
+      "episodes": 5000,
+      "max_steps": 500,
+      "noise": 0.0,
+      "checkpoint_every": 50
+    }
+  ],
+  "selection_rule": [
+    "highest final validation mean reward",
+    "highest mean checkpoint reward in episodes 50 to 1000",
+    "highest overall training mean reward",
+    "lexicographic configuration name"
+  ],
+  "evaluation_episodes_per_seed": 100,
+  "noise_checkpoint_episodes": 30,
+  "validation_seed_base": 200000,
+  "test_seed_base": 300000,
+  "robustness_seed_base": 400000,
+  "noise_configs": [
+    {
+      "name": "noise_0.10",
+      "alpha": 0.5,
+      "gamma": 0.9,
+      "epsilon_start": 1.0,
+      "epsilon_min": 0.05,
+      "epsilon_decay": 0.995,
+      "episodes": 5000,
+      "max_steps": 500,
+      "noise": 0.1,
+      "checkpoint_every": 50
+    },
+    {
+      "name": "noise_0.25",
+      "alpha": 0.5,
+      "gamma": 0.9,
+      "epsilon_start": 1.0,
+      "epsilon_min": 0.05,
+      "epsilon_decay": 0.995,
+      "episodes": 5000,
+      "max_steps": 500,
+      "noise": 0.25,
+      "checkpoint_every": 50
+    }
+  ],
+  "best_config": {
+    "name": "gamma_0.9",
+    "alpha": 0.5,
+    "gamma": 0.9,
+    "epsilon_start": 1.0,
+    "epsilon_min": 0.05,
+    "epsilon_decay": 0.995,
+    "episodes": 5000,
+    "max_steps": 500,
+    "noise": 0.0,
+    "checkpoint_every": 50
+  }
+}
